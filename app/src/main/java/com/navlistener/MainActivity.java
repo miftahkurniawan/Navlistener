@@ -52,9 +52,6 @@ public class MainActivity extends AppCompatActivity {
     // Receiver untuk update dari NavListenerService
     private BroadcastReceiver navReceiver = new BroadcastReceiver() {
         @Override
-        public void onReceive(Context context, String action, Intent intent) {
-        }
-        @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
             if (NavListenerService.ACTION_NAV_UPDATE.equals(action)) {
