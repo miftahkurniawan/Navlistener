@@ -45,7 +45,7 @@ public class NavListenerService extends NotificationListenerService {
         super.onCreate();
         Log.d(TAG, "Service created");
         isListening  = true;
-        mqttManager  = MqttManager.getInstance(this);
+        mqttManager  = MqttManager.getInstance();
     }
 
     @Override
